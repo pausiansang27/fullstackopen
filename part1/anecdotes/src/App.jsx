@@ -12,7 +12,7 @@ const App = () => {
     'The only way to go fast, is to go well.'
   ]
   const [selected, setSelected] = useState(0)
-  const[votes, setVotes] = useState(new Uint8Array(anecdotes.length))
+  const [votes, setVotes] = useState(new Uint8Array(anecdotes.length))
 
   const handleVotes = (selectedIndex) => {
     setVotes(prevVotes => {
